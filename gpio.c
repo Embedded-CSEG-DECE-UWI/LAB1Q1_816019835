@@ -75,6 +75,7 @@ static void gpio_task_example(void *arg)
     }
 }
 
+
 void app_main()
 {
     gpio_config_t io_conf;
@@ -128,7 +129,7 @@ void app_main()
         gpio_set_level(GPIO_OUTPUT_IO_0, cnt % 2);
         //gpio_set_level(GPIO_OUTPUT_IO_1, cnt % 2);
     }
-   
+
     printf("This is a sentence containing my name, Sadie Edwards and ID number, 816019835\n");
 
     /* Print chip information */
@@ -150,3 +151,4 @@ void app_main()
     fflush(stdout);
     esp_restart();
 }
+
